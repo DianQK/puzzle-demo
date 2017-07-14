@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.19" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.16"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Puzzle" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pizzle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QPA-pv-B0v">
+                                <rect key="frame" x="30" y="50" width="69.5" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="Kdu-Yg-3Un"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="hnb-Cf-rUH">
+                                <rect key="frame" x="15" y="111" width="345" height="541"/>
+                                <subviews>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Kg6-D8-2AO">
+                                        <rect key="frame" x="0.0" y="0.0" width="345" height="492"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Cz9-On-NiP">
+                                            <size key="itemSize" width="30" height="50"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells>
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PuzzleCollectionViewCell" id="heF-Vh-Xa8" customClass="PuzzleCollectionViewCell" customModule="Puzzle" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="30" height="50"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                                    <rect key="frame" x="0.0" y="0.0" width="30" height="50"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="a" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JJg-JJ-T5b">
+                                                            <rect key="frame" x="0.0" y="0.0" width="30" height="21"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r4n-q5-LTV">
+                                                            <rect key="frame" x="0.0" y="26" width="30" height="24"/>
+                                                            <nil key="textColor"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                            <textInputTraits key="textInputTraits"/>
+                                                        </textField>
+                                                    </subviews>
+                                                </view>
+                                                <constraints>
+                                                    <constraint firstItem="JJg-JJ-T5b" firstAttribute="leading" secondItem="heF-Vh-Xa8" secondAttribute="leading" id="2YT-hA-PgF"/>
+                                                    <constraint firstItem="r4n-q5-LTV" firstAttribute="leading" secondItem="heF-Vh-Xa8" secondAttribute="leading" id="CW9-8e-xpT"/>
+                                                    <constraint firstAttribute="trailing" secondItem="JJg-JJ-T5b" secondAttribute="trailing" id="NSC-ti-R3j"/>
+                                                    <constraint firstAttribute="bottom" secondItem="r4n-q5-LTV" secondAttribute="bottom" id="aWR-lt-Njh"/>
+                                                    <constraint firstAttribute="trailing" secondItem="r4n-q5-LTV" secondAttribute="trailing" id="cfN-tw-S1R"/>
+                                                    <constraint firstItem="JJg-JJ-T5b" firstAttribute="top" secondItem="heF-Vh-Xa8" secondAttribute="top" id="fXG-PY-NCh"/>
+                                                </constraints>
+                                                <connections>
+                                                    <outlet property="originLabel" destination="JJg-JJ-T5b" id="Wzc-ol-86k"/>
+                                                    <outlet property="textField" destination="r4n-q5-LTV" id="dgN-99-rKC"/>
+                                                </connections>
+                                            </collectionViewCell>
+                                        </cells>
+                                    </collectionView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="sbF-HE-dhY">
+                                        <rect key="frame" x="0.0" y="497" width="345" height="44"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fxu-Z2-wc0">
+                                                <rect key="frame" x="0.0" y="0.0" width="172.5" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="u4P-e6-kYp"/>
+                                                </constraints>
+                                                <state key="normal" title="SUBMIT">
+                                                    <color key="titleColor" red="0.011764705882352941" green="0.66274509803921566" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vuY-Y2-VoW">
+                                                <rect key="frame" x="172.5" y="0.0" width="172.5" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="Y7e-Zb-mmk"/>
+                                                </constraints>
+                                                <state key="normal" title="RESET">
+                                                    <color key="titleColor" red="0.95686274509803915" green="0.2627450980392157" blue="0.21176470588235294" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="hnb-Cf-rUH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="15" id="HCw-ft-9jp"/>
+                            <constraint firstItem="hnb-Cf-rUH" firstAttribute="top" secondItem="QPA-pv-B0v" secondAttribute="bottom" constant="30" id="MK4-Go-daH"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="hnb-Cf-rUH" secondAttribute="bottom" constant="15" id="VFP-Bj-CQh"/>
+                            <constraint firstItem="QPA-pv-B0v" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="eWJ-hz-mrg"/>
+                            <constraint firstItem="QPA-pv-B0v" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="jeE-7N-lVZ"/>
+                            <constraint firstAttribute="trailing" secondItem="hnb-Cf-rUH" secondAttribute="trailing" constant="15" id="xVE-6A-XlE"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="Kg6-D8-2AO" id="Xax-5d-gIQ"/>
+                        <outlet property="resetButton" destination="vuY-Y2-VoW" id="tPD-VW-bnG"/>
+                        <outlet property="submitButton" destination="Fxu-Z2-wc0" id="7rT-9g-qHa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="137.18140929535232"/>
+        </scene>
+    </scenes>
+</document>

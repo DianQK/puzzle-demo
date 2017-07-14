@@ -1,0 +1,35 @@
+PODS:
+  - RandomKit (5.1.0):
+    - ShiftOperations (~> 1.0.2)
+    - Threadly (~> 1.0)
+  - RxCocoa (3.5.0):
+    - RxSwift (~> 3.4)
+  - RxDataSources (1.0.4):
+    - RxCocoa (~> 3.0)
+    - RxSwift (~> 3.0)
+  - RxKeyboard (0.5.1):
+    - RxCocoa (>= 3.4)
+    - RxSwift (>= 3.4)
+  - RxSwift (3.5.0)
+  - ShiftOperations (1.0.2)
+  - Threadly (1.2.0)
+
+DEPENDENCIES:
+  - RandomKit (~> 5.1)
+  - RxCocoa (~> 3.5)
+  - RxDataSources (~> 1.0)
+  - RxKeyboard
+  - RxSwift (~> 3.5)
+
+SPEC CHECKSUMS:
+  RandomKit: 300a73d10e84efcd5efd450a7c56ceeec7d27dbb
+  RxCocoa: a0a09f45d0e5b48ecb6a4a7b4b4c89c88d3f633f
+  RxDataSources: b3389acc5fe2eefb8fcd81a2b76a876ad08bc82a
+  RxKeyboard: bded7b486c447ccc82dc5296e156efc0d46b83e7
+  RxSwift: 18ee9d78b45edb3b0b7e79916b47a116e6dbc842
+  ShiftOperations: 702c9aa98d3b20d98dceb71dd8437b562f7ab3ad
+  Threadly: b772ed7c1ff4a3f03eb4600bbc5ef83b3be5cb29
+
+PODFILE CHECKSUM: 62798ec3bebf605ce251f2b638c977d5e47b4aea
+
+COCOAPODS: 1.2.1
